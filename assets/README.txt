@@ -1,8 +1,7 @@
-Drop optional assets here:
+Drop assets here:
 
-- bg.mp4 — subtle abstract fluid video (muted, looping). 8–20s works best.
-- bg-fallback.jpg — still image used as fallback.
-- og-image.png — used for link previews (1200×630).
-- pp-neue-montreal-regular.woff2 — optional brand font (or delete @font-face in styles.css).
+- bg.mp4 — background loop (8–20s). Replace the placeholder with your real file.
+- bg-fallback.jpg — still image fallback.
+- og-image.png — link preview image (1200×630).
 
-This folder can stay empty — site works without these files.
+Note: A placeholder bg.mp4 is included. Replace it before go-live for the video background to appear.

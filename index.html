@@ -2,74 +2,126 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
+<script defer src="/_vercel/insights/script.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Arcane Accountants — Secrets known by few</title>
-  <meta name="description" content="Arcane Accountants — elite tax, structuring and advisory for founders and high‑growth businesses." />
+  <meta name="description" content="Arcane Accountants — elite tax, structuring and advisory for founders and high-growth businesses." />
   <meta property="og:title" content="Arcane Accountants" />
   <meta property="og:description" content="Elite tax, structuring and advisory. Secrets known by few." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://arcaneaccountants.com/" />
-  <meta property="og:image" content="/assets/og-image.png" />
+<meta property="og:image" content="https://arcaneaccountants.com/assets/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="preload" href="/assets/pp-neue-montreal-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/styles.css" />
+<link rel="canonical" href="https://arcaneaccountants.com/" />
+<meta name="theme-color" content="#0a0e16" />
+<link rel="preload" as="video" href="/assets/bg.mp4" />
+<link rel="preload" as="video" href="/assets/bg-mobile.mp4" media="(max-width:640px)" />
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Arcane Accountants & Advisors Pty Ltd",
+  "url": "https://arcaneaccountants.com/",
+  "email": "admin@arcaneaccountants.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Level 25, 100 Mount Street",
+    "addressLocality": "North Sydney",
+    "addressRegion": "NSW",
+    "postalCode": "2060",
+    "addressCountry": "AU"
+  }
+}</script>
+<script async
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhnyM2gJfFJHabeZkUoTrRvL9KTQ_7s3M&callback=initArcaneMap">
+</script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
-  <header class="site-header" role="banner">
-    <div class="wrap">
-      <div class="brand">
-        <img src="/favicon.svg" alt="" class="logo" width="28" height="28" />
-        <span class="wordmark">Arcane</span><span class="thin">Accountants</span>
-      </div>
-      <nav class="nav" aria-label="Primary">
-        <a href="#services">Services</a>
-        <a href="#principles">Principles</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
+<header class="site-header" role="banner">
+  <div class="wrap">
+<div class="brand">
+  <img src="/assets/logo.png" alt="Arcane Accountants" class="logo" width="160" height="auto" />
+</div>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+      <!-- simple hamburger -->
+      <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+    </button>
+
+    <nav id="primary-nav" class="nav" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#principles">Principles</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
 
   <main id="main">
-    <section class="hero" aria-label="Intro">
-      <video class="bg-video" autoplay muted loop playsinline poster="/assets/bg-fallback.jpg">
-        <source src="/assets/bg.mp4" type="video/mp4" />
-      </video>
-      <div class="grain"></div>
-      <div class="wrap hero-inner">
-        <h1 class="headline">
-          Secrets known by few.<br />
-          Advice executed with precision.
-        </h1>
-        <p class="tagline">Minimal noise. Maximum signal. Tax, structuring & advisory for those who value discretion.</p>
-        <div class="cta-row">
-          <a class="btn btn-primary" href="mailto:hello@arcaneaccountants.com">Email us</a>
-          <a class="btn btn-ghost" href="tel:+61200000000" aria-label="Call Arcane Accountants">Call</a>
-        </div>
-        <div class="cred">
-          <span>CA</span><span>Tax Agent</span><span>Advisory</span>
-        </div>
-      </div>
-    </section>
+<section class="hero" aria-label="Intro">
+  <!-- Desktop / large screens -->
+  <video
+    class="bg-video desktop"
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="metadata"
+    poster="/assets/bg-fallback.jpg"
+    aria-hidden="true"
+  >
+    <source src="/assets/bg.mp4" type="video/mp4" />
+  </video>
+
+  <!-- Mobile / small screens -->
+  <video
+    class="bg-video mobile"
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="metadata"
+    poster="/assets/bg-fallback.jpg"
+    aria-hidden="true"
+  >
+    <source src="/assets/bg-mobile.mp4" type="video/mp4" />
+  </video>
+
+  <div class="grain"></div>
+  <div class="wrap hero-inner">
+    <h1 class="headline">
+      Secrets known by few.<br />
+      Advice executed with precision.
+    </h1>
+    <p class="tagline">Tax, structuring & advisory for those who value discretion.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="mailto:admin@arcaneaccountants.com">Email us</a>
+    </div>
+    <div class="cred">
+      <span>CA</span><span>Tax Agent</span><span>Advisory</span>
+    </div>
+  </div>
+</section>
 
     <section id="services" class="section">
       <div class="wrap grid">
         <article class="card">
           <h3>Tax Strategy</h3>
-          <p>Proactive planning across company, trust, SMSF and individual layers to legally minimise tax and smooth cashflow.</p>
+          <p>Proactive planning across company, trust, SMSF and individual layers to minimise tax and smooth cashflow.</p>
         </article>
         <article class="card">
           <h3>Structuring</h3>
-          <p>Asset protection and commercial flexibility using modern trust/company stacks, buy–sell, ESOP and IP segregation.</p>
+          <p>Asset protection and commercial flexibility using bespoke trust/company structures, IP protection & risk segregation.</p>
         </article>
         <article class="card">
           <h3>Transactions</h3>
-          <p>Due diligence, M&amp;A, capital raises and exits with clear models, clean rooms and bulletproof paper trails.</p>
+          <p>Due diligence, M&amp;A, capital raises and exits with clear models, clean record keeping and bulletproof paper trails.</p>
         </article>
         <article class="card">
           <h3>For Founders</h3>
-          <p>From bookkeeping realities to ATO conversations, we keep the signal crisp so you can ship.</p>
+          <p>From bookkeeping realities to ATO conversations, we keep the signal crisp so you can focus on your business.</p>
         </article>
       </div>
     </section>
@@ -80,30 +132,63 @@
           <h2>Operating principles</h2>
           <ul class="ticks">
             <li>Discretion first. We protect your information and your intent.</li>
-            <li>Precision over volume. Short memos, decisive actions.</li>
-            <li>Evidence‑backed positions. We cite, scenario test and pre‑mortem.</li>
+            <li>Precision over volume. We care about quality not quantity.</li>
+            <li>Evidence-backed positions. We cite, scenario test and pre-mortem.</li>
           </ul>
         </div>
-        <div class="glass card">
-          <h3>Credentials</h3>
-          <p><strong>Registered Tax Agent</strong> &bull; Chartered Accountant &bull; ASIC/ATO liaison</p>
-          <p>Level 25, 100 Mount Street, North Sydney NSW</p>
-        </div>
+<div class="glass card">
+  <h3>Credentials</h3>
+  <p><strong>Registered Tax Agent</strong> • Chartered Accountants • ASIC Agent • Xero Certified Advisor • MYOB Business Certified • QuickBooks Certified ProAdvisor </p>
+  <p>Level 25, 100 Mount Street, North Sydney NSW</p>
+</div>
       </div>
     </section>
+
+<section id="location" class="section section-contrast">
+  <div class="wrap">
+    <div class="map-head">
+      <div>
+        <h2>Find us</h2>
+        <p class="muted">Level 25, 100 Mount Street, North Sydney NSW 2060</p>
+      </div>
+      <div class="map-actions">
+        <a class="btn btn-ghost" target="_blank" rel="noopener"
+           href="https://www.google.com/maps/place/Level+25,+100+Mount+St,+North+Sydney+NSW+2060">
+          Open in Google Maps
+        </a>
+        <a class="btn btn-faint" target="_blank" rel="noopener"
+           href="https://www.google.com/maps/dir//Level+25,+100+Mount+St,+North+Sydney+NSW+2060">
+          Get directions
+        </a>
+      </div>
+    </div>
+
+    <div class="map-card">
+      <div id="arcane-map"></div>
+
+      <!-- Mobile chip overlay -->
+      <div class="map-chip">
+        <div>
+          <strong>Arcane Accountants</strong>
+          <div class="muted small">Level 25, 100 Mount Street</div>
+        </div>
+        <a class="btn btn-accent small" target="_blank" rel="noopener"
+           href="https://www.google.com/maps/place/Level+25,+100+Mount+St,+North+Sydney+NSW+2060">
+          Maps
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
 
     <section id="contact" class="section">
       <div class="wrap contact">
         <h2>Make first contact</h2>
         <p class="muted">One concise email is all it takes. No forms, no funnels.</p>
         <div class="contact-cards">
-          <a class="contact-card" href="mailto:hello@arcaneaccountants.com">
+          <a class="contact-card" href="mailto:admin@arcaneaccountants.com">
             <span class="label">Email</span>
-            <span class="value">hello@arcaneaccountants.com</span>
-          </a>
-          <a class="contact-card" href="tel:+61200000000">
-            <span class="label">Phone</span>
-            <span class="value">+61 2 0000 0000</span>
+            <span class="value">admin@arcaneaccountants.com</span>
           </a>
         </div>
       </div>
@@ -113,7 +198,7 @@
   <footer class="site-footer">
     <div class="wrap footer-grid">
       <small>&copy; <span id="year"></span> Arcane Accountants &amp; Advisors Pty Ltd.</small>
-      <small>ABN 665 358 403</small>
+      <small>ABN 69 665 358 403</small>
       <small><a href="/privacy.html">Privacy</a></small>
     </div>
   </footer>
