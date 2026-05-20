@@ -6,29 +6,46 @@
   <title>Privacy — Arcane Accountants</title>
   <link rel="canonical" href="https://arcaneaccountants.com/privacy.html" />
   <meta name="theme-color" content="#0a0e16" />
+  <link rel="icon" href="/assets/favicon.png" type="image/png" sizes="32x32" />
   <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
-  <header class="site-header">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header" role="banner">
     <div class="wrap">
-      <div class="brand"><img src="/favicon.svg" alt="" class="logo" width="28" height="28"/><span class="wordmark">Arcane</span><span class="thin">Accountants</span></div>
-      <nav class="nav"><a href="/">Home</a></nav>
+      <div class="brand">
+        <a href="/" aria-label="Arcane Accountants — Home">
+          <img src="/assets/logo.png" alt="Arcane Accountants" class="logo" />
+        </a>
+      </div>
+
+      <!-- keep a simple nav here; JS will safely ignore menu toggle if absent -->
+      <nav id="primary-nav" class="nav" aria-label="Primary">
+        <a href="/">Home</a>
+      </nav>
     </div>
   </header>
-  <main class="section">
+
+  <main id="main" class="section">
     <div class="wrap">
       <h1>Privacy</h1>
-      <p class="muted">We collect the bare minimum: emails you send us and details required to provide professional services. We never sell data. For engagements, our standard client agreement applies.</p>
+      <p class="muted">
+        We collect the bare minimum: emails you send us and details required to provide professional services.
+        We never sell data. For engagements, our standard client agreement applies.
+      </p>
       <p>Contact: <a href="mailto:admin@arcaneaccountants.com">admin@arcaneaccountants.com</a></p>
       <p>ABN: 69 665 358 403</p>
     </div>
   </main>
+
   <footer class="site-footer">
     <div class="wrap footer-grid">
       <small>&copy; <span id="year"></span> Arcane Accountants &amp; Advisors Pty Ltd.</small>
       <small>ABN 69 665 358 403</small>
     </div>
   </footer>
+
   <script src="/script.js" defer></script>
 </body>
 </html>

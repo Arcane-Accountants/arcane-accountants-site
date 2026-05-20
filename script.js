@@ -22,13 +22,17 @@ if (mq.matches) {
   }));
 })();
 
-// Google Maps init
-function initArcaneMap() {
-  const coords = { lat: -33.8399, lng: 151.2066 };
+// Google Maps init (must be global for callback)
+window.initArcaneMap = function() {
+  // Exact coordinates for Level 25, 100 Mount Street, North Sydney
+  const coords = { lat: -33.838901, lng: 151.208377 };
 
   const map = new google.maps.Map(document.getElementById("arcane-map"), {
     zoom: 15,
     center: coords,
+    clickableIcons: false,
+    mapTypeControl: false,
+    streetViewControl: false,
     styles: [
       { "featureType": "all", "elementType": "labels.text.fill", "stylers": [{ "color": "#ffffff" }] },
       { "featureType": "all", "elementType": "labels.text.stroke", "stylers": [{ "visibility": "on" }, { "color": "#3e606f" }, { "weight": 2 }, { "gamma": 0.84 }] },
@@ -43,11 +47,11 @@ function initArcaneMap() {
     ]
   });
 
-  // Custom Arcane marker
+  // Custom marker
   new google.maps.Marker({
     position: coords,
     map,
-    title: "Arcane Accountants",
+    title: "Arcane Accountants — Level 25, 100 Mount Street",
     icon: {
       path: google.maps.SymbolPath.CIRCLE,
       scale: 8,
@@ -66,4 +70,4 @@ function initArcaneMap() {
     card.addEventListener("mouseleave", () => map.setOptions({ scrollwheel: false }), { passive: true });
     card.addEventListener("touchstart", () => map.setOptions({ scrollwheel: true }), { passive: true });
   }
-}
+};

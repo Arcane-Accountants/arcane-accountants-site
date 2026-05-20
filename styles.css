@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "PP Neue Montreal";
+  src: url("/assets/pp-neue-montreal-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* Arcane Accountants — minimal, dark, elite */
 :root{
   --bg:#0a0e16;
@@ -41,6 +49,12 @@ img{max-width:100%; display:block}
 .nav{display:flex; gap:22px; font-size:14px; opacity:.95}
 .nav a{padding:6px 8px; border-radius:10px; transition:transform .2s ease, background .2s}
 .nav a:hover{background:var(--glass); transform:translateY(-1px)}
+/* Match nav links to logo font */
+.nav a {
+  font-family: "PP Neue Montreal", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 600;   /* bolder like the logo */
+  letter-spacing: .5px;
+}
 
 /* Hero */
 .hero{position:relative; overflow:hidden; min-height:88vh; display:grid; place-items:center; border-bottom:1px solid var(--line)}
@@ -227,7 +241,11 @@ html, body { max-width: 100%; overflow-x: hidden; }
 @media (min-width:640px){ #arcane-map{ height:430px; } }
 
 .logo {
-  height: 48px; /* adjust this to fit your header nicely */
+  height: 60px;   /* try 60–80px, tweak until it feels balanced */
   width: auto;
   filter: drop-shadow(0 6px 12px rgba(0,0,0,.35));
 }
+@media (max-width:640px){
+  .logo { height: 48px; }  /* smaller logo on phones */
+}
+
